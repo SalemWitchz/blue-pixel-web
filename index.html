@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Pixel | Software Hospitalario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-blue">Blue</span><span class="logo-pixel">Pixel</span>
+        <span class="logo-dot"></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#empresa" class="nav-link">Empresa</a></li>
+        <li><a href="#sociologicos" class="nav-link">Sociológicos</a></li>
+        <li><a href="#etnograficos" class="nav-link">Etnográficos</a></li>
+        <li><a href="#axiologicos" class="nav-link">Axiológicos</a></li>
+        <li><a href="#integrantes" class="nav-link">Integrantes</a></li>
+        <li><a href="#conclusiones" class="nav-link">Conclusiones</a></li>
+        <li><a href="#bibliografia" class="nav-link">Bibliografía</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge reveal">Estudio de las Organizaciones · UNACH</div>
+      <h1 class="hero-title reveal">
+        <span class="gradient-text">Blue Pixel</span>
+      </h1>
+      <p class="hero-subtitle reveal">Software Hospitalario Inteligente</p>
+      <p class="hero-desc reveal">
+        Transformamos la gestión de hospitales y clínicas en Tuxtla Gutiérrez, Chiapas,
+        a través de soluciones tecnológicas adaptadas a la realidad local.
+      </p>
+      <div class="hero-ctas reveal">
+        <a href="#empresa" class="btn-primary">Conocer la empresa</a>
+        <a href="#sociologicos" class="btn-ghost">Ver estudios</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- ─── EMPRESA ─── -->
+  <section id="empresa" class="section">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Quiénes somos</span>
+        <h2>Sobre <span class="gradient-text">Blue Pixel</span></h2>
+        <p>Empresa tecnológica especializada en software hospitalario, orientada a digitalizar y optimizar la gestión de instituciones de salud.</p>
+      </div>
+
+      <div class="empresa-grid">
+        <div class="empresa-card glass-card" data-aos>
+          <div class="card-icon">🏥</div>
+          <h3>Nuestra Misión</h3>
+          <p>Desarrollar soluciones tecnológicas que automatizan procesos administrativos, facilitan la toma de decisiones, reducen errores y fortalecen el funcionamiento integral de los hospitales en Tuxtla Gutiérrez, Chiapas.</p>
+        </div>
+        <div class="empresa-card glass-card" data-aos>
+          <div class="card-icon">🎯</div>
+          <h3>Nuestra Visión</h3>
+          <p>Ser la empresa referente de software hospitalario en el sureste mexicano, reconocida por la calidad, innovación y acompañamiento personalizado que ofrecemos a cada institución de salud.</p>
+        </div>
+        <div class="empresa-card glass-card" data-aos>
+          <div class="card-icon">⚡</div>
+          <h3>Nuestro Impacto</h3>
+          <p>Reducimos errores administrativos, optimizamos tiempos de atención, digitalizamos expedientes clínicos y conectamos a hospitales con tecnología de punta accesible y adaptada a su contexto.</p>
+        </div>
+      </div>
+
+      <div class="section-subheader" data-aos>
+        <h3>Nuestros Departamentos</h3>
+      </div>
+      <div class="departamentos-grid">
+        <div class="dept-card" data-aos>
+          <div class="dept-number">01</div>
+          <h4>Desarrollo de Software</h4>
+          <p>Crea y mantiene el sistema hospitalario, diseña funcionalidades y realiza pruebas y actualizaciones continuas.</p>
+        </div>
+        <div class="dept-card" data-aos>
+          <div class="dept-number">02</div>
+          <h4>Soporte y Atención al Cliente</h4>
+          <p>Capacita al personal médico, resuelve problemas técnicos y mantiene comunicación constante con los clientes.</p>
+        </div>
+        <div class="dept-card" data-aos>
+          <div class="dept-number">03</div>
+          <h4>Innovación y Tecnología</h4>
+          <p>Investiga tendencias como IA y automatización para proponer nuevas funciones que mantengan al sistema competitivo.</p>
+        </div>
+        <div class="dept-card" data-aos>
+          <div class="dept-number">04</div>
+          <h4>Comercial y Marketing</h4>
+          <p>Contacta hospitales, presenta el software, negocia contratos y diseña estrategias de posicionamiento de marca.</p>
+        </div>
+        <div class="dept-card" data-aos>
+          <div class="dept-number">05</div>
+          <h4>Infraestructura y Proveedores</h4>
+          <p>Administra servidores, bases de datos y nube, garantizando la disponibilidad y seguridad del sistema en todo momento.</p>
+        </div>
+      </div>
+
+      <div class="diferenciadores" data-aos>
+        <h3>¿Qué nos diferencia?</h3>
+        <div class="dif-grid">
+          <div class="dif-item">
+            <span class="dif-icon">📍</span>
+            <div><strong>Adaptación local</strong><p>Soluciones diseñadas para hospitales de Tuxtla Gutiérrez</p></div>
+          </div>
+          <div class="dif-item">
+            <span class="dif-icon">🤝</span>
+            <div><strong>Atención personalizada</strong><p>Acompañamiento cercano y soporte continuo</p></div>
+          </div>
+          <div class="dif-item">
+            <span class="dif-icon">🛠️</span>
+            <div><strong>Software a la medida</strong><p>Sistemas ajustados a las necesidades reales de cada hospital</p></div>
+          </div>
+          <div class="dif-item">
+            <span class="dif-icon">🖥️</span>
+            <div><strong>Facilidad de uso</strong><p>Interfaz intuitiva para personal médico y administrativo</p></div>
+          </div>
+          <div class="dif-item">
+            <span class="dif-icon">🚀</span>
+            <div><strong>Innovación constante</strong><p>Mejora continua e integración de nuevas tecnologías</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ESTUDIOS SOCIOLÓGICOS ─── -->
+  <section id="sociologicos" class="section dark-section">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Fundamentos teóricos</span>
+        <h2>Estudios <span class="gradient-text">Sociológicos</span></h2>
+        <p>Los estudios sociológicos analizan cómo las estructuras sociales, las relaciones humanas y los fenómenos colectivos determinan el comportamiento y el desempeño de las organizaciones.</p>
+      </div>
+
+      <div class="estudios-grid">
+
+        <div class="estudio-card" data-aos>
+          <div class="estudio-number">01</div>
+          <div class="estudio-tag">Max Weber · 1922</div>
+          <h3>Burocracia Racional-Legal</h3>
+          <p class="estudio-desc">Establece que las organizaciones eficientes operan mediante reglas claras, jerarquías definidas y procedimientos estandarizados. Weber identificó la burocracia como la forma más eficiente de organización humana.</p>
+          <div class="estudio-efecto">
+            <strong>Efecto en el desempeño organizacional:</strong>
+            <p>En Blue Pixel, la burocracia racional-legal permite que cada departamento tenga funciones y responsabilidades delimitadas. Esto reduce la ambigüedad en los procesos de desarrollo de software y atención al cliente, aumentando la consistencia y la calidad del producto final. La existencia de protocolos claros para implementación, pruebas y soporte eleva significativamente la eficiencia operativa.</p>
+          </div>
+          <div class="estudio-keywords">
+            <span>Jerarquía formal</span>
+            <span>Normatividad</span>
+            <span>Especialización</span>
+          </div>
+        </div>
+
+        <div class="estudio-card" data-aos>
+          <div class="estudio-number">02</div>
+          <div class="estudio-tag">Elton Mayo · 1927–1932</div>
+          <h3>Teoría de las Relaciones Humanas</h3>
+          <p class="estudio-desc">Los experimentos de Hawthorne demostraron que la productividad no depende exclusivamente de condiciones físicas de trabajo, sino también de las relaciones interpersonales, la motivación y el sentido de pertenencia.</p>
+          <div class="estudio-efecto">
+            <strong>Efecto en el desempeño organizacional:</strong>
+            <p>En Blue Pixel, el bienestar del equipo de trabajo impacta directamente la calidad del software desarrollado. Un ambiente colaborativo entre el departamento de desarrollo y el de soporte genera soluciones más orientadas al usuario final. El reconocimiento del trabajo individual y la cohesión grupal reducen la rotación de personal técnico especializado, un activo crítico para la empresa.</p>
+          </div>
+          <div class="estudio-keywords">
+            <span>Motivación</span>
+            <span>Clima laboral</span>
+            <span>Sentido de pertenencia</span>
+          </div>
+        </div>
+
+        <div class="estudio-card" data-aos>
+          <div class="estudio-number">03</div>
+          <div class="estudio-tag">Talcott Parsons · 1951</div>
+          <h3>Estructural-Funcionalismo</h3>
+          <p class="estudio-desc">Las organizaciones son sistemas sociales donde cada elemento cumple una función específica para mantener el equilibrio del conjunto. Parsons propuso el modelo AGIL: Adaptación, Logro de metas, Integración y mantenimiento de Latencias.</p>
+          <div class="estudio-efecto">
+            <strong>Efecto en el desempeño organizacional:</strong>
+            <p>Blue Pixel funciona como un sistema integrado: el departamento comercial genera recursos (adaptación), el de desarrollo alcanza los objetivos del producto (logro), el de soporte articula los departamentos con el cliente (integración) y el de innovación asegura la continuidad cultural y tecnológica (latencia). La disfunción de cualquier área impacta negativamente a toda la organización.</p>
+          </div>
+          <div class="estudio-keywords">
+            <span>Sistema social</span>
+            <span>Equilibrio</span>
+            <span>Funciones AGIL</span>
+          </div>
+        </div>
+
+        <div class="estudio-card" data-aos>
+          <div class="estudio-number">04</div>
+          <div class="estudio-tag">Pierre Bourdieu · 1986</div>
+          <h3>Teoría del Capital Social</h3>
+          <p class="estudio-desc">El capital social se refiere a las redes de relaciones, confianza y cooperación que los individuos y organizaciones construyen a lo largo del tiempo. Estas redes generan ventajas competitivas difíciles de replicar.</p>
+          <div class="estudio-efecto">
+            <strong>Efecto en el desempeño organizacional:</strong>
+            <p>Las alianzas que Blue Pixel construye con hospitales locales y proveedores tecnológicos constituyen su capital social más valioso. La confianza ganada a través de soporte cercano y personalización se convierte en fidelidad del cliente y en recomendaciones boca a boca, reduciendo costos de adquisición de clientes y fortaleciendo la posición competitiva de la empresa en Tuxtla Gutiérrez.</p>
+          </div>
+          <div class="estudio-keywords">
+            <span>Redes de confianza</span>
+            <span>Alianzas estratégicas</span>
+            <span>Reputación</span>
+          </div>
+        </div>
+
+        <div class="estudio-card" data-aos>
+          <div class="estudio-number">05</div>
+          <div class="estudio-tag">Ralf Dahrendorf · 1959</div>
+          <h3>Teoría del Conflicto Social</h3>
+          <p class="estudio-desc">El conflicto no es una anomalía sino una fuerza inherente y motora del cambio organizacional. Las tensiones entre grupos con intereses distintos generan transformaciones que impulsan la evolución de las instituciones.</p>
+          <div class="estudio-efecto">
+            <strong>Efecto en el desempeño organizacional:</strong>
+            <p>En Blue Pixel, las tensiones entre el área de desarrollo (que prioriza calidad técnica) y el área comercial (que prioriza tiempos de entrega) representan conflictos productivos que, gestionados correctamente, generan innovación en metodologías de trabajo. Del mismo modo, la resistencia al cambio que enfrentan en los hospitales les obliga a mejorar su estrategia de capacitación y comunicación continuamente.</p>
+          </div>
+          <div class="estudio-keywords">
+            <span>Poder y autoridad</span>
+            <span>Cambio organizacional</span>
+            <span>Gestión de conflictos</span>
+          </div>
+        </div>
+
+        <div class="estudio-card" data-aos>
+          <div class="estudio-number">06</div>
+          <div class="estudio-tag">George H. Mead · Erving Goffman</div>
+          <h3>Interaccionismo Simbólico</h3>
+          <p class="estudio-desc">Las personas actúan según el significado que atribuyen a los objetos, eventos y situaciones de su entorno. Dentro de las organizaciones, los símbolos, el lenguaje y los rituales construyen la identidad y la cultura corporativa.</p>
+          <div class="estudio-efecto">
+            <strong>Efecto en el desempeño organizacional:</strong>
+            <p>La identidad visual y el nombre "Blue Pixel" no son elementos neutros: funcionan como símbolos que comunican innovación, tecnología y confianza ante los hospitales clientes. Los rituales internos como las reuniones de equipo, los procesos de onboarding y la forma en que se documenta el código crean significados compartidos que unifican al equipo y refuerzan los valores de la empresa frente a los desafíos del sector salud.</p>
+          </div>
+          <div class="estudio-keywords">
+            <span>Cultura corporativa</span>
+            <span>Identidad simbólica</span>
+            <span>Comunicación organizacional</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ESTUDIOS ETNOGRÁFICOS ─── -->
+  <section id="etnograficos" class="section">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Investigación cualitativa</span>
+        <h2>Estudios <span class="gradient-text">Etnográficos</span></h2>
+        <p>La etnografía organizacional permite comprender las prácticas, rituales, valores y estructuras informales que operan en el interior de Blue Pixel y en los entornos hospitalarios donde trabaja.</p>
+      </div>
+
+      <div class="etno-intro glass-card" data-aos>
+        <h3>¿Qué es la Etnografía Organizacional?</h3>
+        <p>La etnografía es un método de investigación cualitativa que se apoya en la observación participante y las entrevistas en profundidad para describir la cultura de un grupo desde adentro. Aplicada a las organizaciones, permite revelar las estructuras informales, los rituales cotidianos y los sistemas de significado que no aparecen en los organigramas ni en los manuales de procedimientos.</p>
+      </div>
+
+      <div class="etno-grid">
+        <div class="etno-card" data-aos>
+          <div class="etno-icon">👁️</div>
+          <h4>Observación Participante</h4>
+          <h5>Blue Pixel en su entorno hospitalario</h5>
+          <p>Al adentrarse en los hospitales de Tuxtla Gutiérrez, el equipo de Blue Pixel actúa simultáneamente como observador y participante. Documentan los flujos de trabajo del personal médico y administrativo, identifican los cuellos de botella en los procesos manuales y registran las dinámicas de comunicación entre departamentos. Esta inmersión permite diseñar software que responda a la realidad del trabajador de salud, no a una idealización de ella.</p>
+        </div>
+
+        <div class="etno-card" data-aos>
+          <div class="etno-icon">💬</div>
+          <h4>Entrevistas en Profundidad</h4>
+          <h5>Voces del sector salud</h5>
+          <p>Las conversaciones abiertas con médicos, enfermeros, administrativos y directores hospitalarios revelan percepciones, frustraciones y necesidades que no emergen en encuestas estructuradas. A través de estas entrevistas, Blue Pixel ha identificado que la resistencia al cambio tecnológico no radica en falta de capacidad, sino en el temor a perder la autonomía sobre los procesos cotidianos; un hallazgo que redefine su estrategia de implementación.</p>
+        </div>
+
+        <div class="etno-card" data-aos>
+          <div class="etno-icon">📋</div>
+          <h4>Análisis de Artefactos Culturales</h4>
+          <h5>Los documentos como ventana a la organización</h5>
+          <p>Los expedientes en papel, las listas de espera manuales, los cuadernos de registro de farmacia y los formatos de facturación físicos son artefactos culturales que revelan cómo el hospital construye su realidad informativa. El análisis etnográfico de estos materiales le permitió a Blue Pixel entender la lógica interna de los procesos existentes antes de proponer su digitalización, asegurando transiciones más fluidas y aceptadas por el personal.</p>
+        </div>
+
+        <div class="etno-card" data-aos>
+          <div class="etno-icon">🗺️</div>
+          <h4>Mapeo Cultural Interno</h4>
+          <h5>La cultura dentro de Blue Pixel</h5>
+          <p>Etnográficamente, Blue Pixel es una organización donde conviven perfiles técnicos (desarrolladores) y perfiles relacionales (soporte, comercial). El mapeo de sus interacciones revela una cultura informal que valora la resolución ágil de problemas y la comunicación directa. Los rituales internos —revisiones de código, demos semanales al cliente, sesiones de retroalimentación— construyen cohesión y un sentido de propósito compartido que define la identidad de la empresa.</p>
+        </div>
+
+        <div class="etno-card" data-aos>
+          <div class="etno-icon">🌐</div>
+          <h4>Contexto Sociocultural Local</h4>
+          <h5>Tuxtla Gutiérrez como entorno específico</h5>
+          <p>La etnografía del entorno de Blue Pixel reconoce las particularidades de Tuxtla Gutiérrez: un sistema de salud público con recursos limitados, una brecha tecnológica significativa entre instituciones públicas y privadas, y dinámicas de confianza basadas en relaciones personales. Este conocimiento situado le otorga a Blue Pixel una ventaja que ninguna empresa foránea puede replicar fácilmente, posicionándola como aliada natural de los hospitales de la región.</p>
+        </div>
+
+        <div class="etno-card" data-aos>
+          <div class="etno-icon">🔄</div>
+          <h4>Etnografía Digital</h4>
+          <h5>Interacciones en el entorno virtual</h5>
+          <p>Con el auge de los sistemas en la nube, Blue Pixel también practica etnografía digital: observa cómo los usuarios interactúan con su software en tiempo real, analiza los tickets de soporte como narrativas de experiencia de usuario y estudia los patrones de uso de cada módulo. Esta etnografía digital informa iteraciones del producto que responden a comportamientos reales, no a suposiciones del equipo de desarrollo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ESTUDIOS AXIOLÓGICOS ─── -->
+  <section id="axiologicos" class="section dark-section">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Valores y ética</span>
+        <h2>Estudios <span class="gradient-text">Axiológicos</span></h2>
+        <p>La axiología organizacional estudia los valores que guían el comportamiento, la toma de decisiones y la cultura de una empresa. En Blue Pixel, los valores no son un adorno de marca: son el motor de cada decisión técnica, comercial y humana.</p>
+      </div>
+
+      <div class="axio-intro glass-card" data-aos>
+        <h3>¿Qué es la Axiología Organizacional?</h3>
+        <p>La axiología es la rama de la filosofía que estudia la naturaleza, jerarquía y fundamentación de los valores. En el contexto organizacional, permite identificar qué principios guían el comportamiento de los miembros de una empresa, cómo estos valores se construyen colectivamente y de qué manera influyen en la cultura, la estrategia y los resultados. Para Blue Pixel, el análisis axiológico revela la relación entre sus valores declarados y sus prácticas reales.</p>
+      </div>
+
+      <div class="valores-grid">
+        <div class="valor-card" data-aos>
+          <div class="valor-icon">💡</div>
+          <h4>Innovación</h4>
+          <p>Blue Pixel no concibe el software como un producto terminado, sino como un proceso en evolución constante. La innovación es el valor que mueve al departamento de Tecnología a investigar IA, automatización y nuevas arquitecturas. Este valor imprime una disposición creativa que transforma cada limitación técnica en una oportunidad de mejora.</p>
+          <div class="valor-impacto">
+            <strong>Impacto organizacional:</strong>
+            <span>Diferenciación competitiva y adaptabilidad al cambio tecnológico</span>
+          </div>
+        </div>
+
+        <div class="valor-card" data-aos>
+          <div class="valor-icon">🤝</div>
+          <h4>Responsabilidad</h4>
+          <p>El manejo de datos médicos implica una responsabilidad extraordinaria. Blue Pixel se compromete con la privacidad de la información del paciente, el cumplimiento de normativas de protección de datos y la disponibilidad ininterrumpida del sistema. Este valor se materializa en los protocolos de seguridad y los acuerdos de confidencialidad con cada hospital cliente.</p>
+          <div class="valor-impacto">
+            <strong>Impacto organizacional:</strong>
+            <span>Confianza del cliente y mitigación de riesgos legales y éticos</span>
+          </div>
+        </div>
+
+        <div class="valor-card" data-aos>
+          <div class="valor-icon">⭐</div>
+          <h4>Excelencia</h4>
+          <p>Cada módulo de software, cada sesión de capacitación y cada ticket de soporte es una oportunidad de demostrar excelencia. Blue Pixel entiende que en el sector salud, un error de sistema puede tener consecuencias en la atención al paciente, por lo que el estándar de calidad no admite mediocridad. La excelencia se cultiva en la cultura interna antes de expresarse hacia el cliente.</p>
+          <div class="valor-impacto">
+            <strong>Impacto organizacional:</strong>
+            <span>Reducción de errores, mayor satisfacción del cliente y reputación sólida</span>
+          </div>
+        </div>
+
+        <div class="valor-card" data-aos>
+          <div class="valor-icon">🌱</div>
+          <h4>Compromiso Social</h4>
+          <p>Blue Pixel nace con consciencia de que digitalizando hospitales públicos de Tuxtla Gutiérrez contribuye directamente a mejorar la calidad de atención de los sectores más vulnerables. El compromiso social impulsa decisiones como ofrecer precios accesibles para clínicas pequeñas y priorizar hospitales con procesos más desorganizados, donde el impacto de su software es mayor.</p>
+          <div class="valor-impacto">
+            <strong>Impacto organizacional:</strong>
+            <span>Propósito compartido que motiva al equipo y legitima la empresa ante la comunidad</span>
+          </div>
+        </div>
+
+        <div class="valor-card" data-aos>
+          <div class="valor-icon">🔍</div>
+          <h4>Integridad</h4>
+          <p>La integridad en Blue Pixel significa actuar con honestidad frente al cliente incluso cuando implica reconocer limitaciones del sistema o retrasos en la implementación. Significa también transparencia interna: comunicar los problemas técnicos al equipo directivo sin maquillar la realidad. La integridad construye las bases del capital social que sostiene la empresa a largo plazo.</p>
+          <div class="valor-impacto">
+            <strong>Impacto organizacional:</strong>
+            <span>Relaciones duraderas con clientes y cultura interna de confianza</span>
+          </div>
+        </div>
+
+        <div class="valor-card" data-aos>
+          <div class="valor-icon">🤲</div>
+          <h4>Servicio</h4>
+          <p>El valor de servicio trasciende la relación transaccional proveedor-cliente. Para Blue Pixel, servir a un hospital significa comprender profundamente sus necesidades, anticipar sus dificultades y estar disponible cuando algo falla. Este valor explica por qué el departamento de Soporte es considerado estratégico y no un área de costo: es la primera línea de la relación con el cliente.</p>
+          <div class="valor-impacto">
+            <strong>Impacto organizacional:</strong>
+            <span>Fidelización del cliente y diferenciación frente a competidores</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="etica-box glass-card" data-aos>
+        <h3>Ética Organizacional en Blue Pixel</h3>
+        <div class="etica-cols">
+          <div>
+            <h5>Ética en el manejo de datos</h5>
+            <p>Al operar con expedientes clínicos electrónicos y datos de facturación médica, Blue Pixel asume un compromiso ético con la confidencialidad, integridad y disponibilidad de la información. Cada decisión de arquitectura de sistema considera el impacto en la privacidad del paciente.</p>
+          </div>
+          <div>
+            <h5>Conflictos de valor y resolución</h5>
+            <p>Cuando la presión comercial por cerrar contratos rápidamente colisiona con los tiempos necesarios para implementar correctamente un sistema, Blue Pixel privilegia la integridad del servicio sobre la velocidad. Esta jerarquía de valores define su carácter ético como organización.</p>
+          </div>
+          <div>
+            <h5>Responsabilidad con el personal</h5>
+            <p>La ética organizacional también se dirige hacia adentro: garantizar condiciones laborales justas, reconocer el trabajo del equipo técnico y mantener comunicación transparente sobre el estado de la empresa son prácticas que consolidan la confianza interna y atraen talento comprometido.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── INTEGRANTES ─── -->
+  <section id="integrantes" class="section">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Equipo de trabajo</span>
+        <h2>Nuestros <span class="gradient-text">Integrantes</span></h2>
+        <p>El equipo detrás de Blue Pixel combina habilidades técnicas, creativas y organizacionales para transformar la gestión hospitalaria en Tuxtla Gutiérrez.</p>
+      </div>
+
+      <div class="integrantes-grid">
+
+        <div class="integrante-card" data-aos>
+          <div class="integrante-avatar">
+            <div class="avatar-initials">RA</div>
+          </div>
+          <div class="integrante-info">
+            <h4>Rodrigo Axel Pineda Arce</h4>
+            <span class="integrante-rol">Desarrollo de Software</span>
+            <p>Responsable del diseño e implementación de los módulos principales del sistema hospitalario, asegurando la arquitectura técnica y la calidad del código.</p>
+          </div>
+        </div>
+
+        <div class="integrante-card" data-aos>
+          <div class="integrante-avatar">
+            <div class="avatar-initials">AE</div>
+          </div>
+          <div class="integrante-info">
+            <h4>Aldo Eglain Roblero Pérez</h4>
+            <span class="integrante-rol">Innovación y Tecnología</span>
+            <p>Investiga tendencias tecnológicas emergentes e integra soluciones de automatización e inteligencia artificial al sistema hospitalario de Blue Pixel.</p>
+          </div>
+        </div>
+
+        <div class="integrante-card" data-aos>
+          <div class="integrante-avatar">
+            <div class="avatar-initials">SA</div>
+          </div>
+          <div class="integrante-info">
+            <h4>Sergio Alberto Solís Díaz</h4>
+            <span class="integrante-rol">Infraestructura y Proveedores</span>
+            <p>Gestiona la arquitectura de servidores, bases de datos y servicios en la nube, garantizando la disponibilidad y seguridad del sistema en todo momento.</p>
+          </div>
+        </div>
+
+        <div class="integrante-card" data-aos>
+          <div class="integrante-avatar">
+            <div class="avatar-initials">FE</div>
+          </div>
+          <div class="integrante-info">
+            <h4>Felix Eduardo Toledo Grajales</h4>
+            <span class="integrante-rol">Comercial y Marketing</span>
+            <p>Diseña y ejecuta las estrategias de captación de clientes, presentación del producto y posicionamiento de Blue Pixel en el mercado hospitalario local.</p>
+          </div>
+        </div>
+
+        <div class="integrante-card" data-aos>
+          <div class="integrante-avatar">
+            <div class="avatar-initials">FV</div>
+          </div>
+          <div class="integrante-info">
+            <h4>Fátima Vázquez Méndez</h4>
+            <span class="integrante-rol">Soporte y Atención al Cliente</span>
+            <p>Lidera la capacitación del personal hospitalario, brinda soporte técnico y mantiene la relación con los clientes para asegurar su satisfacción continua.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONCLUSIONES ─── -->
+  <section id="conclusiones" class="section dark-section">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Reflexiones finales</span>
+        <h2>Conclusiones <span class="gradient-text">Individuales</span></h2>
+        <p>Cada integrante del equipo comparte su perspectiva sobre lo aprendido en este proyecto universitario y su relación con el Estudio de las Organizaciones.</p>
+      </div>
+
+      <div class="conclusiones-grid">
+
+        <div class="conclusion-card glass-card" data-aos>
+          <div class="conclusion-avatar">RA</div>
+          <div class="conclusion-body">
+            <h4>Rodrigo Axel Pineda Arce</h4>
+            <p>Este proyecto me permitió comprender que el software hospitalario no es solo un producto tecnológico, sino el reflejo de una organización. Las teorías sociológicas, especialmente la burocracia weberiana, me ayudaron a entender por qué los hospitales operan con procedimientos tan rígidos: la estandarización no es burocracia inútil, sino una respuesta racional a la complejidad del sector salud. Aplicar este enfoque al diseño de Blue Pixel me llevó a construir módulos más adaptados a la realidad organizacional del hospital, y no solo a la lógica técnica del software.</p>
+          </div>
+        </div>
+
+        <div class="conclusion-card glass-card" data-aos>
+          <div class="conclusion-avatar">AE</div>
+          <div class="conclusion-body">
+            <h4>Aldo Eglain Roblero Pérez</h4>
+            <p>Estudiar la teoría del conflicto de Dahrendorf me cambió la perspectiva sobre las tensiones dentro del equipo de Blue Pixel. Antes veía los desacuerdos entre el área de desarrollo y el área comercial como problemas a eliminar. Ahora entiendo que son motores de innovación. El conflicto entre la necesidad de entregar rápido y la necesidad de hacerlo bien nos obligó a implementar metodologías ágiles que equilibran ambos intereses. El Estudio de las Organizaciones me enseñó que una empresa sana no es la que no tiene conflictos, sino la que los gestiona con inteligencia.</p>
+          </div>
+        </div>
+
+        <div class="conclusion-card glass-card" data-aos>
+          <div class="conclusion-avatar">SA</div>
+          <div class="conclusion-body">
+            <h4>Sergio Alberto Solís Díaz</h4>
+            <p>La teoría de sistemas de Parsons fue la que más resonó con mi área de trabajo en infraestructura. Comprender que Blue Pixel no es una suma de departamentos independientes, sino un sistema donde cada parte depende del funcionamiento de las demás, transformó mi visión del rol de la infraestructura tecnológica. Cuando los servidores fallan, no es solo un problema técnico: es una disfunción sistémica que afecta la atención al paciente en el hospital. Esa responsabilidad me llevó a establecer protocolos de disponibilidad mucho más rigurosos que los que habría planteado con una visión puramente técnica.</p>
+          </div>
+        </div>
+
+        <div class="conclusion-card glass-card" data-aos>
+          <div class="conclusion-avatar">FE</div>
+          <div class="conclusion-body">
+            <h4>Felix Eduardo Toledo Grajales</h4>
+            <p>El interaccionismo simbólico me abrió los ojos sobre la importancia de la identidad y la comunicación en las organizaciones. Como encargado de la estrategia comercial y de marketing de Blue Pixel, entendí que el nombre, el diseño y el discurso de la empresa no son elementos decorativos: son construcciones simbólicas que comunican valores y generan confianza. La etnografía, por su parte, me enseñó que para vender a un hospital no basta con presentar un catálogo de funciones, sino que hay que comprender profundamente la cultura de esa institución: sus miedos, sus rutinas y sus prioridades no declaradas. Ese conocimiento es nuestra ventaja diferencial.</p>
+          </div>
+        </div>
+
+        <div class="conclusion-card glass-card" data-aos>
+          <div class="conclusion-avatar">FV</div>
+          <div class="conclusion-body">
+            <h4>Fátima Vázquez Méndez</h4>
+            <p>El estudio de las relaciones humanas de Elton Mayo fue el marco teórico que más influyó en mi perspectiva como responsable de soporte y atención al cliente. Comprendí que la resistencia del personal hospitalario al nuevo software no es irracionalidad ni falta de capacidad: es una respuesta humana completamente lógica al cambio en sus rutinas y su sentido de competencia. Desde esa comprensión, replantee la estrategia de capacitación: en lugar de sesiones técnicas, comenzamos con talleres que reconocen la experiencia previa del personal y construyen confianza en el nuevo sistema de manera gradual. Los resultados en adopción y satisfacción mejoraron significativamente. La sociología me hizo mejor en mi trabajo.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── BIBLIOGRAFÍA ─── -->
+  <section id="bibliografia" class="section">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Fuentes académicas</span>
+        <h2><span class="gradient-text">Bibliografía</span></h2>
+        <p>Referencias académicas utilizadas para fundamentar los estudios sociológicos, etnográficos y axiológicos presentados en este proyecto.</p>
+      </div>
+
+      <div class="biblio-grid">
+
+        <div class="biblio-section" data-aos>
+          <h3>Estudios Sociológicos</h3>
+          <ul class="biblio-list">
+            <li>
+              <span class="biblio-num">01</span>
+              <div>
+                <p>Weber, M. (1947). <em>The Theory of Social and Economic Organization.</em> Free Press.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">02</span>
+              <div>
+                <p>Mayo, E. (1933). <em>The Human Problems of an Industrial Civilization.</em> Macmillan.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">03</span>
+              <div>
+                <p>Parsons, T. (1951). <em>The Social System.</em> Free Press.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">04</span>
+              <div>
+                <p>Bourdieu, P. (1986). The Forms of Capital. En Richardson, J. (Ed.), <em>Handbook of Theory and Research for the Sociology of Education.</em> Greenwood Press.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">05</span>
+              <div>
+                <p>Dahrendorf, R. (1959). <em>Class and Class Conflict in Industrial Society.</em> Stanford University Press.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">06</span>
+              <div>
+                <p>Goffman, E. (1959). <em>The Presentation of Self in Everyday Life.</em> Doubleday.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">07</span>
+              <div>
+                <p>Mead, G. H. (1934). <em>Mind, Self and Society.</em> University of Chicago Press.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="biblio-section" data-aos>
+          <h3>Estudios Etnográficos</h3>
+          <ul class="biblio-list">
+            <li>
+              <span class="biblio-num">08</span>
+              <div>
+                <p>Geertz, C. (1973). <em>The Interpretation of Cultures.</em> Basic Books.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">09</span>
+              <div>
+                <p>Malinowski, B. (1922). <em>Argonauts of the Western Pacific.</em> Routledge.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">10</span>
+              <div>
+                <p>Hammersley, M. & Atkinson, P. (2007). <em>Ethnography: Principles in Practice</em> (3a ed.). Routledge.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">11</span>
+              <div>
+                <p>Schein, E. H. (2010). <em>Organizational Culture and Leadership</em> (4a ed.). Jossey-Bass.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">12</span>
+              <div>
+                <p>Pink, S. (2009). <em>Doing Sensory Ethnography.</em> SAGE Publications.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="biblio-section" data-aos>
+          <h3>Estudios Axiológicos</h3>
+          <ul class="biblio-list">
+            <li>
+              <span class="biblio-num">13</span>
+              <div>
+                <p>Hartman, R. S. (1967). <em>The Structure of Value: Foundations of a Scientific Axiology.</em> Southern Illinois University Press.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">14</span>
+              <div>
+                <p>Rokeach, M. (1973). <em>The Nature of Human Values.</em> Free Press.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">15</span>
+              <div>
+                <p>Schwartz, S. H. (1992). Universals in the content and structure of values. <em>Advances in Experimental Social Psychology, 25,</em> 1–65.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">16</span>
+              <div>
+                <p>Collins, J. C. & Porras, J. I. (1994). <em>Built to Last: Successful Habits of Visionary Companies.</em> HarperBusiness.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="biblio-section" data-aos>
+          <h3>Teoría Organizacional</h3>
+          <ul class="biblio-list">
+            <li>
+              <span class="biblio-num">17</span>
+              <div>
+                <p>Mintzberg, H. (1979). <em>The Structuring of Organizations.</em> Prentice-Hall.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">18</span>
+              <div>
+                <p>Morgan, G. (1986). <em>Images of Organization.</em> SAGE Publications.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">19</span>
+              <div>
+                <p>Robbins, S. P. & Judge, T. A. (2017). <em>Organizational Behavior</em> (17a ed.). Pearson.</p>
+              </div>
+            </li>
+            <li>
+              <span class="biblio-num">20</span>
+              <div>
+                <p>Chiavenato, I. (2006). <em>Introducción a la Teoría General de la Administración</em> (7a ed.). McGraw-Hill.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-blue">Blue</span><span class="logo-pixel">Pixel</span>
+          <span class="logo-dot"></span>
+          <p>Software Hospitalario Inteligente<br/>Tuxtla Gutiérrez, Chiapas · México</p>
+        </div>
+        <div class="footer-links">
+          <h5>Secciones</h5>
+          <a href="#empresa">Empresa</a>
+          <a href="#sociologicos">Estudios Sociológicos</a>
+          <a href="#etnograficos">Estudios Etnográficos</a>
+          <a href="#axiologicos">Estudios Axiológicos</a>
+          <a href="#integrantes">Integrantes</a>
+          <a href="#conclusiones">Conclusiones</a>
+          <a href="#bibliografia">Bibliografía</a>
+        </div>
+        <div class="footer-info">
+          <h5>Proyecto Académico</h5>
+          <p>Materia: Estudio de las Organizaciones</p>
+          <p>Institución: UNACH</p>
+          <p>Periodo: 2026</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Blue Pixel · Proyecto Universitario · Estudio de las Organizaciones</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
