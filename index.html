@@ -11,6 +11,8 @@
 </head>
 <body>
 
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <!-- ─── NAVIGATION ─── -->
   <nav id="navbar">
     <div class="nav-container">
@@ -35,6 +37,11 @@
 
   <!-- ─── HERO ─── -->
   <section id="hero">
+    <div class="hero-ambient" aria-hidden="true">
+      <div class="ha ha-1"></div>
+      <div class="ha ha-2"></div>
+      <div class="ha ha-3"></div>
+    </div>
     <canvas id="particleCanvas"></canvas>
     <div class="hero-content">
       <div class="hero-badge reveal">Estudio de las Organizaciones · UNACH</div>
@@ -49,6 +56,15 @@
       <div class="hero-ctas reveal">
         <a href="#empresa" class="btn-primary">Conocer la empresa</a>
         <a href="#sociologicos" class="btn-ghost">Ver estudios</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="hstat"><span class="hstat-n">5</span><span class="hstat-l">Integrantes</span></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><span class="hstat-n">5</span><span class="hstat-l">Departamentos</span></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><span class="hstat-n">UNACH</span><span class="hstat-l">Universidad</span></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><span class="hstat-n">TGZ</span><span class="hstat-l">Chiapas, MX</span></div>
       </div>
     </div>
     <div class="hero-scroll-indicator">
@@ -730,6 +746,10 @@
       </div>
     </div>
   </footer>
+
+  <button class="back-top" id="backTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="js/main.js"></script>
 </body>

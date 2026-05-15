@@ -78,6 +78,28 @@
   });
 })();
 
+/* ─── SCROLL PROGRESS BAR ─── */
+(function () {
+  const bar = document.getElementById('scrollProgress');
+  if (!bar) return;
+  window.addEventListener('scroll', () => {
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (docH > 0 ? (window.scrollY / docH) * 100 : 0) + '%';
+  }, { passive: true });
+})();
+
+/* ─── BACK TO TOP ─── */
+(function () {
+  const btn = document.getElementById('backTop');
+  if (!btn) return;
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
 /* ─── NAVBAR SCROLL & ACTIVE ─── */
 (function () {
   const navbar = document.getElementById('navbar');
@@ -85,10 +107,8 @@
   const sections = document.querySelectorAll('section[id]');
 
   window.addEventListener('scroll', () => {
-    // Scrolled class
     navbar.classList.toggle('scrolled', window.scrollY > 30);
 
-    // Active link highlight
     let current = '';
     sections.forEach(s => {
       if (window.scrollY >= s.offsetTop - 100) current = s.id;
@@ -128,19 +148,30 @@
 /* ─── SCROLL-TRIGGERED ANIMATIONS (Intersection Observer) ─── */
 (function () {
   const elements = document.querySelectorAll('[data-aos]');
+
   const observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry, i) => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
-          setTimeout(() => {
-            entry.target.classList.add('aos-visible');
-          }, i * 80);
-          observer.unobserve(entry.target);
+          const el = entry.target;
+          const delay = parseInt(el.dataset.aosDelay || el.dataset.delay || 0);
+          setTimeout(() => el.classList.add('aos-visible'), delay);
+          observer.unobserve(el);
         }
       });
     },
     { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
   );
+
+  // Assign stagger delays to grid siblings that share a parent
+  const grids = document.querySelectorAll(
+    '.estudios-grid, .etnos-grid, .valores-grid, .integrantes-grid, .dept-grid'
+  );
+  grids.forEach(grid => {
+    grid.querySelectorAll('[data-aos]').forEach((el, i) => {
+      if (!el.dataset.aosDelay) el.dataset.aosDelay = i * 90;
+    });
+  });
 
   elements.forEach(el => observer.observe(el));
 })();
